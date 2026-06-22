@@ -15,7 +15,7 @@ buildExpired = false
 [params]
   author = "Cedrick Jumtock"
   description = "Navigating the maze of history one question at a time — deep dives, uncomfortable truths, and the stories textbooks quietly skipped."
-  defaultTheme = "dark"
+  defaultTheme = "auto"
   disableThemeToggle = false
   ShowReadingTime = true
   ShowShareButtons = false
