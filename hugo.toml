@@ -1,72 +1,73 @@
 baseURL = "https://strugglinghistorian.me/"
-locale = "en-us"
-title = "The Struggling Historian"
-theme = "PaperMod"
-paginate = 10
+locale  = "en-us"
+title   = "The Struggling Historian"
+theme   = "stack"
+paginate      = 10
 enableRobotsTXT = true
-buildDrafts = false
-buildFuture = false
-buildExpired = false
+buildDrafts   = false
+buildFuture   = false
+buildExpired  = false
 
 [minify]
   disableXML = true
   minifyOutput = true
 
 [params]
-  author = "Cedrick Jumtock"
-  description = "Navigating the maze of history one question at a time — deep dives, uncomfortable truths, and the stories textbooks quietly skipped."
-  defaultTheme = "auto"
-  disableThemeToggle = false
-  ShowReadingTime = true
-  ShowShareButtons = false
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = true
-  ShowCodeCopyButtons = true
-  ShowWordCount = true
-  ShowRssButtonInSectionTermList = true
-  UseHugoToc = true
-  disableSpecial1stPost = false
-  disableScrollToTop = false
-  comments = false
-  hidemeta = false
-  hideSummary = false
-  showtoc = true
-  tocopen = false
-  mainSections = ["posts"]
+  mainSections   = ["posts"]
+  rssFullContent = true
+  description    = "Navigating the maze of history one question at a time — deep dives, uncomfortable truths, and the stories textbooks quietly skipped."
 
-  [params.homeInfoParams]
-    Title = "The Struggling Historian"
-    Content = "Navigating the maze of history one question at a time. This is where curiosity meets the archive: expect deep dives, uncomfortable truths, and the stories textbooks quietly skipped. Written by **Cedrick Jumtock**."
+  [params.footer]
+    since      = 2026
+    customText = "Cedrick Jumtock"
 
-  [[params.socialIcons]]
-    name = "github"
-    url = "https://github.com/namkatcedrickjumtock"
+  [params.sidebar]
+    compact = false
+    avatar  = ""
 
-  [[params.socialIcons]]
-    name = "linkedin"
-    url = "https://www.linkedin.com/in/namkatcedrick/"
+    [params.sidebar.subtitle]
+      text = "Navigating the maze of history one question at a time."
 
-  [[params.socialIcons]]
-    name = "sessionize"
-    url = "https://sessionize.com/cedrick/"
+  [params.article]
+    headingAnchor = true
+    toc           = true
+    readingTime   = true
 
-  [[params.socialIcons]]
-    name = "email"
-    url = "mailto:cedrickjumtock+dev01@gmail.com"
+    [params.article.license]
+      enabled = false
 
-  [params.assets]
-    favicon = "/favicon.ico"
+    [params.article.mermaid]
+      look          = "classic"
+      lightTheme    = "default"
+      darkTheme     = "dark"
+      htmlLabels    = true
+      securityLevel = "loose"
 
-  [params.cover]
-    hidden = false
-    hiddenInList = false
-    hiddenInSingle = false
-    responsiveImages = true
+  [params.colorScheme]
+    toggle  = true
+    default = "auto"
+
+  [params.comments]
+    enabled = false
+
+  [[params.widgets.homepage]]
+    type = "search"
+
+  [[params.widgets.homepage]]
+    type  = "archives"
+    limit = 5
+
+  [[params.widgets.homepage]]
+    type  = "tag-cloud"
+    limit = 10
+
+  [[params.widgets.page]]
+    type = "toc"
 
 [taxonomies]
   category = "categories"
-  tag = "tags"
-  series = "series"
+  tag      = "tags"
+  series   = "series"
 
 [markup]
   [markup.goldmark]
@@ -74,42 +75,88 @@ buildExpired = false
       unsafe = true
   [markup.highlight]
     anchorLineNos = false
-    codeFences = true
-    guessSyntax = true
-    lineNos = true
-    style = "dracula"
-    tabWidth = 2
+    codeFences    = true
+    guessSyntax   = true
+    lineNos       = true
+    style         = "dracula"
+    tabWidth      = 2
   [markup.tableOfContents]
-    endLevel = 4
-    ordered = false
+    endLevel   = 4
+    ordered    = false
     startLevel = 2
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS"]
 
 [menu]
   [[menu.main]]
+    identifier = "home"
+    name       = "Home"
+    url        = "/"
+    weight     = 10
+    [menu.main.params]
+      icon = "home"
+
+  [[menu.main]]
     identifier = "posts"
-    name = "Posts"
-    url = "/posts/"
-    weight = 10
+    name       = "Posts"
+    url        = "/posts/"
+    weight     = 20
+    [menu.main.params]
+      icon = "archives"
+
   [[menu.main]]
     identifier = "tags"
-    name = "Tags"
-    url = "/tags/"
-    weight = 20
-  [[menu.main]]
-    identifier = "categories"
-    name = "Categories"
-    url = "/categories/"
-    weight = 30
+    name       = "Tags"
+    url        = "/tags/"
+    weight     = 30
+    [menu.main.params]
+      icon = "tag"
+
   [[menu.main]]
     identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 40
+    name       = "About"
+    url        = "/about/"
+    weight     = 40
+    [menu.main.params]
+      icon = "user"
+
   [[menu.main]]
     identifier = "search"
-    name = "Search"
-    url = "/search/"
-    weight = 50
+    name       = "Search"
+    url        = "/search/"
+    weight     = 50
+    [menu.main.params]
+      icon = "search"
+
+  [[menu.social]]
+    identifier = "github"
+    name       = "GitHub"
+    url        = "https://github.com/namkatcedrickjumtock"
+    weight     = 10
+    [menu.social.params]
+      icon = "brand-github"
+
+  [[menu.social]]
+    identifier = "linkedin"
+    name       = "LinkedIn"
+    url        = "https://www.linkedin.com/in/namkatcedrick/"
+    weight     = 20
+    [menu.social.params]
+      icon = "brand-linkedin"
+
+  [[menu.social]]
+    identifier = "sessionize"
+    name       = "Sessionize"
+    url        = "https://sessionize.com/cedrick/"
+    weight     = 30
+    [menu.social.params]
+      icon = "link"
+
+  [[menu.social]]
+    identifier = "email"
+    name       = "Email"
+    url        = "mailto:cedrickjumtock+dev01@gmail.com"
+    weight     = 40
+    [menu.social.params]
+      icon = "link"

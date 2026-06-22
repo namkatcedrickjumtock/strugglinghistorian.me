@@ -1,1 +1,18 @@
-{{- partial "mermaid.html" . -}}
+<script>
+  if (document.querySelector('.mermaid')) {
+    import('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs').then(m => {
+      m.default.initialize({
+        startOnLoad: true,
+        theme: document.documentElement.dataset.theme === 'light' ? 'default' : 'dark',
+        themeVariables: {
+          background: '#1a1a2e',
+          primaryColor: '#e94560',
+          primaryTextColor: '#eaeaea',
+          lineColor: '#a0a0b0',
+          secondaryColor: '#16213e',
+          tertiaryColor: '#0f3460'
+        }
+      });
+    });
+  }
+</script>
