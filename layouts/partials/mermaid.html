@@ -1,0 +1,17 @@
+{{ if .Store.Get "hasMermaid" }}
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'dark',
+    themeVariables: {
+      background: '#1a1a2e',
+      primaryColor: '#e94560',
+      primaryTextColor: '#eaeaea',
+      lineColor: '#e94560',
+      secondaryColor: '#16213e',
+      tertiaryColor: '#0f3460'
+    }
+  });
+</script>
+{{ end }}
