@@ -14,7 +14,7 @@ buildExpired  = false
 
 [params]
   author = "Namkat Cedrick"
-  description = "Navigating the maze of history one question at a time — deep dives, uncomfortable truths, and the stories textbooks quietly skipped."
+  description = "A software engineer's obsession with history — event-driven systems, developer tooling, African history, and the patterns that connect them all."
   defaultTheme      = "auto"
   disableThemeToggle = false
   ShowReadingTime   = true
@@ -35,7 +35,7 @@ buildExpired  = false
 
   [params.homeInfoParams]
     Title   = "The Struggling Historian"
-    Content = "Navigating the maze of history one question at a time. This is where curiosity meets the archive: expect deep dives, uncomfortable truths, and the stories textbooks quietly skipped. Written by **Cedrick Jumtock**."
+    Content = "An engineer who keeps getting distracted by the past. I build event-driven systems and developer toolchains by day — and write about African history, colonial memory, and the origins of the things we take for granted by night. Because tech and history are not as separate as people think. Written by **Namkat Cedrick**, software engineer from Cameroon."
 
   [[params.socialIcons]]
     name = "github"

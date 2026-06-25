@@ -1,22 +1,35 @@
 ---
 title: "About"
-date: 2026-06-22
+date: 2026-06-25
 draft: false
 showToc: false
 hidemeta: true
 ---
 
-## The Struggling Historian
+## Namkat Cedrick
 
-History is rarely clean. It's messy, contested, and full of voices that got edited out somewhere along the way. This blog is my attempt to sit with that mess — to ask the uncomfortable questions, follow the threads that don't tie up neatly, and resist the urge to flatten complexity into a satisfying story.
+I'm a software engineer from Cameroon — on the beautiful West African coast — now working with teams across the globe. My career has been a series of learning-driven pivots: starting as an engineer building go-to-market products in startups, becoming an Agile coach when I realised the hardest bugs weren't in the code, and eventually moving into tech lead roles where I could shape both systems and teams.
 
-I'm **Cedrick Jumtock** — a historian (struggling, as the name suggests) drawn to the margins of the archive, the footnotes of empire, and the lives of people who weren't supposed to matter. I write about African history, colonial memory, digital humanities, and whatever else refuses to leave me alone.
+I design event-driven systems and build developer toolchains with an AI-first mindset. I care deeply about the infrastructure that makes other engineers' lives easier — the kind of work that disappears into the background until the day it doesn't.
 
-You'll find here:
-- Deep dives into historical events and movements
-- Diagrams and timelines to map out complex histories
-- Code and tools for digital history work
-- Essays that sit somewhere between the archive and the present
+But I'm also hopelessly obsessed with history. The patterns that repeat. The human stories that get forgotten. The epic narratives that shaped everything we now take for granted, and the origins of the systems we think we invented.
+
+Hence the name **The Struggling Historian**. Yes, it's a bit of a joke. I'm not actually a historian. I'm an engineer who keeps getting distracted by the past. The "struggling" is real — I'm trying to keep history alive as a dying art, even as I'm building the future.
+
+Because here's the thing: those who don't remember the past are condemned to repeat it. And as humanity, looking back gives us the right standing to approach the future — and the humility to learn from our mistakes.
+
+So I write about tech. I write about history. And I try to show how they're not as separate as people think.
+
+Welcome to the struggle.
+
+---
+
+## What you'll find here
+
+- Engineering essays — systems design, developer tooling, AI-first thinking
+- History deep dives — African history, colonial memory, the origins of things
+- The crossover — where code meets the archive, and why it matters
+- Diagrams, timelines, and visualisations because some ideas only make sense when you can see them
 
 ---
 

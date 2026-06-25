@@ -3,7 +3,6 @@ CONTENT_DIR := content/posts
 
 .DEFAULT_GOAL := help
 
-# ─── Help ────────────────────────────────────────────────────────────────────
 
 .PHONY: help
 help:
@@ -19,7 +18,6 @@ help:
 	@echo "  make build                          Build site to public/"
 	@echo ""
 
-# ─── New post ────────────────────────────────────────────────────────────────
 
 .PHONY: new
 new:
@@ -36,7 +34,6 @@ endif
 	echo "  → Edit the file, then run: make publish POST=$$SLUG"; \
 	echo ""
 
-# ─── Publish ─────────────────────────────────────────────────────────────────
 
 .PHONY: publish
 publish:
@@ -56,7 +53,6 @@ endif
 	echo "  → Live in ~30s at https://strugglinghistorian.me/posts/$(POST)/"; \
 	echo ""
 
-# ─── Unpublish ───────────────────────────────────────────────────────────────
 
 .PHONY: unpublish
 unpublish:
@@ -76,7 +72,6 @@ endif
 	echo "  → Removed from site after next deploy"; \
 	echo ""
 
-# ─── List posts ──────────────────────────────────────────────────────────────
 
 .PHONY: list
 list:
@@ -94,7 +89,6 @@ list:
 	done
 	@echo ""
 
-# ─── Dev server ──────────────────────────────────────────────────────────────
 
 .PHONY: serve
 serve:
@@ -104,7 +98,6 @@ serve:
 preview:
 	$(HUGO) server --navigateToChanged
 
-# ─── Build ───────────────────────────────────────────────────────────────────
 
 .PHONY: build
 build:
@@ -114,7 +107,6 @@ build:
 	@echo "  ✓ Built to public/"
 	@echo ""
 
-# ─── Helpers ─────────────────────────────────────────────────────────────────
 
 # Returns path to post's index.md (bundle or flat file)
 define post_file
