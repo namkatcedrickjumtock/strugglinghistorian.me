@@ -13,6 +13,7 @@ help:
 	@echo "  make publish  POST=my-post-title   Publish a post (draft=false) and push"
 	@echo "  make unpublish POST=my-post-title  Unpublish a post (draft=true) and push"
 	@echo "  make list                           List all posts and their status"
+	@echo "  make run                            Dev server (drafts visible, network accessible)"
 	@echo "  make serve                          Dev server (drafts visible)"
 	@echo "  make preview                        Dev server (published only, like prod)"
 	@echo "  make build                          Build site to public/"
@@ -89,6 +90,10 @@ list:
 	done
 	@echo ""
 
+
+.PHONY: run
+run:
+	$(HUGO) server -D --navigateToChanged --bind 0.0.0.0
 
 .PHONY: serve
 serve:
