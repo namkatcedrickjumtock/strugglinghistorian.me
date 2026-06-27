@@ -33,9 +33,13 @@ buildExpired  = false
   tocopen    = false
   mainSections = ["posts"]
 
+  [params.label]
+    text      = "The Struggling Historian"
+    iconSVG   = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="12,3 13.5,10.5 12,12 10.5,10.5" fill="currentColor" stroke="none"/><polygon points="21,12 13.5,13.5 12,12 13.5,10.5" fill="currentColor" stroke="none" opacity="0.5"/><polygon points="12,21 10.5,13.5 12,12 13.5,13.5" fill="currentColor" stroke="none" opacity="0.5"/><polygon points="3,12 10.5,10.5 12,12 10.5,13.5" fill="currentColor" stroke="none" opacity="0.8"/><text x="12" y="7.5" text-anchor="middle" font-size="2.5" font-family="serif" fill="currentColor" stroke="none">N</text></svg>'
+
   [params.homeInfoParams]
     Title   = "The Struggling Historian"
-    Content = "**Software engineer from Cameroon** — building event-driven systems and developer toolchains with an AI-first mindset.\n\nBut I'm also hopelessly obsessed with history. The patterns that repeat, the empires that left systems we're still debugging, the stories that never made the textbook.\n\nSo I write about tech. I write about history. And I try to show they're not as separate as people think.\n\n*Welcome to the struggle.*"
+    Content = "I am not a historian.\n\nI'm a software engineer from Cameroon who builds event-driven systems and distributed infrastructure. But somewhere between debugging distributed traces and reading about the fall of empires, I got confused about which one I care about more.\n\n**The Struggling Historian** is where I work that out — in public, one post at a time. Tech, history, and the uncomfortable places where they turn out to be the same thing.\n\n*The struggle is real.*"
 
   [[params.socialIcons]]
     name = "github"

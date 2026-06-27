@@ -1,3 +1,42 @@
+/* ── Hero two-column layout ────────────────────────────────────── */
+
+.home-info {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.home-info-content {
+  min-width: 0;
+}
+
+.home-info-map-wrapper {
+  flex-shrink: 0;
+}
+
+.home-info-map {
+  width: 220px;
+  border-radius: 4px;
+  opacity: 0.88;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .home-info {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .home-info-map-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .home-info-map {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
 /* ── Homepage sections ─────────────────────────────────────────── */
 
 .home-section {
