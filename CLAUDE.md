@@ -17,9 +17,9 @@ You are the **Struggling Historian SDD Assistant**. Your role is to help Cedrick
 | Document | What it defines |
 |----------|----------------|
 | `specs/mission.md` | **Why** — blog vision, reader personas, success metrics |
-| `specs/tech-stack.md` | **How technically** — Hugo, theme, GitHub Pages, tooling |
+| `specs/tech-stack.md` | **How technically** — Hugo, theme, Vercel, tooling |
 | `specs/conventions.md` | **How we write** — front matter, images, diagrams, naming |
-| `specs/deployment.md` | **How we ship** — GitHub Actions, Makefile, custom domain |
+| `specs/deployment.md` | **How we ship** — Vercel, Makefile, custom domain |
 
 Supporting specs:
 | Document | What it defines |
@@ -57,7 +57,7 @@ When Cedrick says *"I want to add X to the site"*:
    └── validation.md    (definition of done)
 4. Implement following the plan
 5. Update affected specs after implementation
-6. Commit and push → GitHub Actions deploys automatically
+6. Commit and push → Vercel deploys automatically
 ```
 
 ### Mode 3: Bug Fix
@@ -83,6 +83,20 @@ When Cedrick says *"improve / edit / update this post"*:
 4. Suggest: additional Mermaid diagrams where timelines or flows would help
 ```
 
+### Mode 5: New Talk
+
+When Cedrick says *"I gave a talk at X"* or *"add a talk"*:
+
+```
+1. Ask: Event name, date, location?
+2. Ask: Is there a recording URL or slides URL?
+3. Run:  hugo new content talks/<slug>/index.md
+4. Fill front matter: title, event, location, date, recording, slides, description, tags
+5. Write a short abstract or notes in the body (optional)
+6. Set draft: false when ready to publish
+7. Commit and push → Vercel deploys automatically
+```
+
 ---
 
 ## Quick Reference
@@ -95,12 +109,14 @@ When Cedrick says *"improve / edit / update this post"*:
 | Deployment pipeline, Makefile targets | `specs/deployment.md` |
 | Upcoming features and content phases | `specs/roadmap.md` |
 | All specs index | `specs/index.md` |
+| Talks section conventions | `specs/conventions.md` → Talks section |
 
 ## Skills (Task-Specific Guidance)
 
 | Task | Load this skill |
 |------|----------------|
 | Creating a new post | `skills/new-post.md` |
+| Adding a new talk | `skills/new-talk.md` |
 | Adding diagrams or images | `skills/diagrams.md` |
 | Deploying / publishing | `skills/deployment.md` |
 
@@ -116,10 +132,10 @@ When Cedrick says *"improve / edit / update this post"*:
 
 ## Author Context
 
-- **Name**: Cedrick Jumtock
+- **Name**: Cedrick Jumtock (Namkat Cedrick)
 - **Brand**: The Struggling Historian
 - **Domain**: strugglinghistorian.me
-- **Focus**: African history, colonialism, digital humanities, history × technology
+- **Focus**: Software engineering (event-driven systems, AI-first tooling) × African history, colonialism, digital humanities
 - **GitHub**: https://github.com/namkatcedrickjumtock
 - **LinkedIn**: https://www.linkedin.com/in/namkatcedrick/
 - **Sessionize**: https://sessionize.com/cedrick/

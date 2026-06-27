@@ -1,0 +1,51 @@
+{{- define "main" }}
+
+<article class="post-single">
+  <header class="post-header">
+    {{- partial "breadcrumbs.html" . }}
+    <h1 class="post-title entry-hint-parent">{{ .Title }}</h1>
+
+    {{- if .Description }}
+    <div class="post-description">{{ .Description }}</div>
+    {{- end }}
+
+    <div class="post-meta talk-meta">
+      {{- with .Params.event }}<span>{{ . }}</span>{{ end -}}
+      {{- with .Params.location }} &middot; <span>{{ . }}</span>{{ end }} &middot;
+      <span>{{ .Date.Format "January 2, 2006" }}</span>
+    </div>
+
+    {{- if or .Params.recording .Params.slides }}
+    <div class="talk-links">
+      {{- with .Params.recording }}
+      <a href="{{ . }}" class="talk-link" target="_blank" rel="noopener noreferrer">Watch Recording →</a>
+      {{- end }}
+      {{- with .Params.slides }}
+      <a href="{{ . }}" class="talk-link" target="_blank" rel="noopener noreferrer">View Slides →</a>
+      {{- end }}
+    </div>
+    {{- end }}
+  </header>
+
+  {{- if .Content }}
+  <div class="post-content md-content">
+    {{- if not (.Param "disableAnchoredHeadings") }}
+    {{- partial "anchored_headings.html" .Content -}}
+    {{- else }}{{ .Content }}{{ end }}
+  </div>
+  {{- end }}
+
+  <footer class="post-footer">
+    {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
+    <ul class="post-tags">
+      {{- range ($.GetTerms $tags) }}
+      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+      {{- end }}
+    </ul>
+    {{- if (.Param "ShowPostNavLinks") }}
+    {{- partial "post_nav_links.html" . }}
+    {{- end }}
+  </footer>
+</article>
+
+{{- end }}{{/* end main */}}

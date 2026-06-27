@@ -5,10 +5,9 @@
 | Layer | Decision | Reason |
 |-------|----------|--------|
 | Static site generator | Hugo v0.163+ (extended) | Fast, Go-native, no Node.js required at runtime, excellent content pipeline |
-| Theme | PaperMod (current) | Dark mode first, fast, well-maintained, good typography |
-| Hosting | GitHub Pages | Free, reliable, integrates with the existing git workflow |
-| CI/CD | GitHub Actions | Native GitHub integration, deploys on every push to `main` |
-| Custom domain | `strugglinghistorian.me` | CNAME in `static/`, configured in GitHub Pages settings |
+| Theme | PaperMod (forced dark) | Editorial dark mode, fast, well-maintained, good typography |
+| Hosting | Vercel | Free, global CDN, deploys on every push to `main`, no billing lock on public repos |
+| Custom domain | `strugglinghistorian.me` | Registered on Namecheap; A + CNAME records point to Vercel edge nodes |
 | Hugo binary location | `/usr/local/Cellar/hugo/0.163.3/bin/hugo` (macOS via Homebrew) | |
 
 ## Content & Diagrams

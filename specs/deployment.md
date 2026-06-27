@@ -4,39 +4,42 @@
 
 ```
 Push to main
-    → GitHub Actions runs .github/workflows/deploy.yml
-    → Hugo builds with --gc --minify
-    → public/ uploaded to GitHub Pages
+    → Vercel detects the push (GitHub integration)
+    → Hugo builds with --gc --minify  (vercel.json + HUGO_VERSION env var)
     → Site live at https://strugglinghistorian.me within ~30s
 ```
 
 Draft posts (`draft = true`) are **never included** in production builds. They are safe to commit and push.
 
-## GitHub Actions workflow
+## Vercel configuration
 
-File: `.github/workflows/deploy.yml`
+File: `vercel.json` (project root)
 
-- **Trigger**: push to `main`, or manual `workflow_dispatch`
-- **Hugo version**: 0.163.0 (extended)
-- **Build command**: `hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"`
-- **Output**: `public/` directory uploaded as a GitHub Pages artifact
-- **Permission**: `pages: write`, `id-token: write`
+```json
+{
+  "buildCommand": "hugo --gc --minify",
+  "outputDirectory": "public",
+  "framework": "hugo"
+}
+```
 
-The `--gc` flag removes orphaned cached files — critical because Hugo does not clear `public/` between builds. Without `--gc`, deleted posts remain on the live site.
+- **Hugo version**: set via Vercel env variable `HUGO_VERSION = 0.163.0` (Production + Preview + Development)
+- **Trigger**: every push to `main` auto-deploys to production
+- **Preview deploys**: every PR/branch gets a unique preview URL automatically
+
+The `--gc` flag removes orphaned cached files — critical because Hugo does not clear `public/` between builds.
 
 ## Custom domain
 
-- `static/CNAME` contains `strugglinghistorian.me`
-- Hugo copies this verbatim into `public/CNAME` on every build
-- GitHub Pages reads `public/CNAME` and serves traffic for that domain
-- DNS: point `A` records for `strugglinghistorian.me` to GitHub Pages IPs:
+- Domain: `strugglinghistorian.me` (purchased on Namecheap)
+- Registered in Vercel project: `strugglinghistorian-me`
+- DNS on Namecheap Advanced DNS:
   ```
-  185.199.108.153
-  185.199.109.153
-  185.199.110.153
-  185.199.111.153
+  A     @    216.198.79.1       (Vercel edge node 1)
+  A     @    64.29.17.1         (Vercel edge node 2)
+  CNAME www  44e4bcff869faddc.vercel-dns-017.com
   ```
-- And a `CNAME` record for `www` → `namkatcedrickjumtock.github.io`
+- SSL: auto-provisioned by Vercel, auto-renewed
 
 ## Makefile targets
 

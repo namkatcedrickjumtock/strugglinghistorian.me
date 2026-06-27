@@ -112,6 +112,39 @@ Line numbers are on by default (configured globally). To disable for a specific 
 - One H2 heading per major section; H3 for subsections within a section
 - The description field should be one complete sentence — not a fragment, not two sentences
 
+## Talks
+
+Each talk is a page bundle under `content/talks/<slug>/index.md`.
+
+### Slug naming
+Same rules as posts: lowercase, hyphens, descriptive — e.g., `event-driven-systems-devsum-2026`.
+
+### Front matter (YAML)
+
+```yaml
+---
+title: "Talk Title"
+date: 2026-01-15
+draft: false
+event: "Conference Name"
+location: "City, Country"
+description: "One sentence shown in the talks listing and SEO meta."
+recording: "https://..."    # optional — link to video recording
+slides: "https://..."       # optional — link to slide deck
+tags: ["systems", "ai", "tooling"]
+---
+```
+
+- `event` and `location` are displayed in the talk header and on the homepage Talks section
+- `recording` and `slides` render as prominent links on the talk page if present
+- `description` is required — it shows in the listing and in social previews
+- `draft: false` when ready to publish; safe to commit as `draft: true`
+
+### Body content (optional)
+Write an abstract, key takeaways, or speaker notes in the markdown body. Leave blank if the description is sufficient.
+
+---
+
 ## What NOT to commit
 
 - `public/` — generated output, in `.gitignore`

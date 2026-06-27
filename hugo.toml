@@ -15,7 +15,7 @@ buildExpired  = false
 [params]
   author = "Namkat Cedrick"
   description = "A software engineer's obsession with history — event-driven systems, developer tooling, African history, and the patterns that connect them all."
-  defaultTheme      = "auto"
+  defaultTheme      = "dark"
   disableThemeToggle = false
   ShowReadingTime   = true
   ShowShareButtons  = false
@@ -35,7 +35,7 @@ buildExpired  = false
 
   [params.homeInfoParams]
     Title   = "The Struggling Historian"
-    Content = "An engineer who keeps getting distracted by the past. I build event-driven systems and developer toolchains by day — and write about African history, colonial memory, and the origins of the things we take for granted by night. Because tech and history are not as separate as people think. Written by **Namkat Cedrick**, software engineer from Cameroon."
+    Content = "**Software engineer from Cameroon** — building event-driven systems and developer toolchains with an AI-first mindset.\n\nBut I'm also hopelessly obsessed with history. The patterns that repeat, the empires that left systems we're still debugging, the stories that never made the textbook.\n\nSo I write about tech. I write about history. And I try to show they're not as separate as people think.\n\n*Welcome to the struggle.*"
 
   [[params.socialIcons]]
     name = "github"
@@ -89,6 +89,11 @@ buildExpired  = false
     name       = "Posts"
     url        = "/posts/"
     weight     = 10
+  [[menu.main]]
+    identifier = "talks"
+    name       = "Talks"
+    url        = "/talks/"
+    weight     = 15
   [[menu.main]]
     identifier = "tags"
     name       = "Tags"

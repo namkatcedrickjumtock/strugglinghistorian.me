@@ -25,9 +25,12 @@ Prioritised phases. Each phase is independently shippable. Later phases depend o
 
 ## Phase 1 — First real content
 
+- [x] Landing page updated — dark editorial design, new hero copy from me.md
+- [x] Talks section added — custom single layout, homepage highlight, menu item
+- [x] CLAUDE.md updated — Mode 5 (New Talk), Vercel deployment references
 - [ ] Write and publish the first real post (not a demo)
+- [ ] Add at least one talk to `content/talks/`
 - [ ] Add a profile photo to the About page
-- [ ] Write a proper About page bio
 - [ ] Add a favicon/site icon
 - [ ] Confirm Mermaid diagrams render correctly in browser
 

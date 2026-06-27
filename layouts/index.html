@@ -1,0 +1,57 @@
+{{- define "main" }}
+
+{{- if site.Params.homeInfoParams }}
+{{- partial "home_info.html" . }}
+{{- end }}
+
+{{- $posts := where site.RegularPages "Section" "posts" }}
+{{- if $posts }}
+<section class="home-section">
+  <h2 class="section-heading">Recent Writing</h2>
+  <div class="section-list">
+    {{- range first 3 $posts }}
+    <article class="section-entry">
+      <a href="{{ .Permalink }}" class="entry-link-block">
+        <h3 class="entry-card-title">{{ .Title }}</h3>
+        {{- if .Description }}
+        <p class="entry-card-summary">{{ .Description }}</p>
+        {{- end }}
+        <span class="entry-card-meta">{{ .Date.Format "January 2006" }}</span>
+      </a>
+    </article>
+    {{- end }}
+  </div>
+  {{- if gt (len $posts) 3 }}
+  <a href="/posts/" class="section-more">All writing →</a>
+  {{- end }}
+</section>
+{{- end }}
+
+{{- $talks := where site.RegularPages "Section" "talks" }}
+{{- if $talks }}
+<section class="home-section">
+  <h2 class="section-heading">Talks</h2>
+  <div class="section-list">
+    {{- range first 3 $talks }}
+    <article class="section-entry">
+      <a href="{{ .Permalink }}" class="entry-link-block">
+        <h3 class="entry-card-title">{{ .Title }}</h3>
+        <span class="entry-card-meta">
+          {{- with .Params.event }}{{ . }}{{ end -}}
+          {{- with .Params.location }} · {{ . }}{{ end -}}
+          {{- with .Date }} · {{ .Format "January 2006" }}{{ end -}}
+        </span>
+        {{- if .Description }}
+        <p class="entry-card-summary">{{ .Description }}</p>
+        {{- end }}
+      </a>
+    </article>
+    {{- end }}
+  </div>
+  {{- if gt (len $talks) 3 }}
+  <a href="/talks/" class="section-more">All talks →</a>
+  {{- end }}
+</section>
+{{- end }}
+
+{{- end }}{{- /* end main */ -}}
