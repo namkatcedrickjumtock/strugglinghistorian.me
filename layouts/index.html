@@ -6,52 +6,18 @@
 
 {{- $posts := where site.RegularPages "Section" "posts" }}
 {{- if $posts }}
-<section class="home-section">
-  <h2 class="section-heading">Recent Writing</h2>
-  <div class="section-list">
-    {{- range first 3 $posts }}
-    <article class="section-entry">
-      <a href="{{ .Permalink }}" class="entry-link-block">
-        <h3 class="entry-card-title">{{ .Title }}</h3>
-        {{- if .Description }}
-        <p class="entry-card-summary">{{ .Description }}</p>
-        {{- end }}
-        <span class="entry-card-meta">{{ .Date.Format "January 2006" }}</span>
-      </a>
-    </article>
+<section class="home-posts">
+  <ul class="posts-list">
+    {{- range $posts }}
+    <li class="posts-list-item">
+      <a href="{{ .Permalink }}" class="posts-list-title">{{ .Title }}</a>
+      <span class="posts-list-date">{{ .Date.Format "Jan 2006" }}</span>
+    </li>
     {{- end }}
-  </div>
-  {{- if gt (len $posts) 3 }}
-  <a href="/posts/" class="section-more">All writing →</a>
-  {{- end }}
+  </ul>
 </section>
-{{- end }}
-
-{{- $talks := where site.RegularPages "Section" "talks" }}
-{{- if $talks }}
-<section class="home-section">
-  <h2 class="section-heading">Talks</h2>
-  <div class="section-list">
-    {{- range first 3 $talks }}
-    <article class="section-entry">
-      <a href="{{ .Permalink }}" class="entry-link-block">
-        <h3 class="entry-card-title">{{ .Title }}</h3>
-        <span class="entry-card-meta">
-          {{- with .Params.event }}{{ . }}{{ end -}}
-          {{- with .Params.location }} · {{ . }}{{ end -}}
-          {{- with .Date }} · {{ .Format "January 2006" }}{{ end -}}
-        </span>
-        {{- if .Description }}
-        <p class="entry-card-summary">{{ .Description }}</p>
-        {{- end }}
-      </a>
-    </article>
-    {{- end }}
-  </div>
-  {{- if gt (len $talks) 3 }}
-  <a href="/talks/" class="section-more">All talks →</a>
-  {{- end }}
-</section>
+{{- else }}
+<p class="posts-coming-soon">First post coming soon...</p>
 {{- end }}
 
 {{- end }}{{- /* end main */ -}}

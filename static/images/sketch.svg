@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 280" width="220" height="257">
+  <!-- Cream paper background -->
+  <rect width="240" height="280" fill="#F4F0E8" rx="3"/>
+  <!-- Double border -->
+  <rect x="5" y="5" width="230" height="270" fill="none" stroke="#C8B870" stroke-width="1.5" rx="2"/>
+  <rect x="8" y="8" width="224" height="264" fill="none" stroke="#D4C48A" stroke-width="0.5" rx="1"/>
+
+  <!-- === CIRCUIT TRACES (from compass north) === -->
+  <!-- Vertical trace up from N -->
+  <line x1="120" y1="120" x2="120" y2="74" stroke="#2A2218" stroke-width="1.2"/>
+  <circle cx="120" cy="74" r="2.8" fill="#2A2218"/>
+  <!-- Horizontal trace right -->
+  <line x1="120" y1="74" x2="186" y2="74" stroke="#2A2218" stroke-width="1.2"/>
+  <circle cx="186" cy="74" r="2.8" fill="#2A2218"/>
+  <!-- Vertical up to component pad -->
+  <line x1="186" y1="74" x2="186" y2="40" stroke="#2A2218" stroke-width="1.2"/>
+  <rect x="182" y="33" width="8" height="8" fill="#2A2218" rx="1"/>
+  <!-- Short trace right (open pad) -->
+  <line x1="186" y1="74" x2="218" y2="74" stroke="#2A2218" stroke-width="1.2" opacity="0.55"/>
+  <rect x="215" y="70" width="7" height="7" fill="none" stroke="#2A2218" stroke-width="1" rx="1" opacity="0.55"/>
+  <!-- Trace left (open pad) -->
+  <line x1="120" y1="74" x2="54" y2="74" stroke="#2A2218" stroke-width="1.2" opacity="0.5"/>
+  <rect x="48" y="70" width="7" height="7" fill="none" stroke="#2A2218" stroke-width="1" rx="1" opacity="0.5"/>
+
+  <!-- === CIRCUIT TRACES (from compass east) === -->
+  <line x1="165" y1="165" x2="208" y2="165" stroke="#2A2218" stroke-width="1.2"/>
+  <circle cx="208" cy="165" r="2.8" fill="#2A2218"/>
+  <line x1="208" y1="165" x2="208" y2="218" stroke="#2A2218" stroke-width="1.2"/>
+  <rect x="204" y="216" width="8" height="8" fill="#2A2218" rx="1"/>
+
+  <!-- === COMPASS === -->
+  <!-- Outer ring -->
+  <circle cx="120" cy="165" r="45" fill="none" stroke="#2A2218" stroke-width="1.5"/>
+  <!-- Inner ring (fine) -->
+  <circle cx="120" cy="165" r="36" fill="none" stroke="#2A2218" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Intercardinal tick marks -->
+  <line x1="151.8" y1="133.2" x2="148.3" y2="136.7" stroke="#2A2218" stroke-width="1" opacity="0.45"/>
+  <line x1="151.8" y1="196.8" x2="148.3" y2="193.3" stroke="#2A2218" stroke-width="1" opacity="0.45"/>
+  <line x1="88.2" y1="196.8" x2="91.7" y2="193.3" stroke="#2A2218" stroke-width="1" opacity="0.45"/>
+  <line x1="88.2" y1="133.2" x2="91.7" y2="136.7" stroke="#2A2218" stroke-width="1" opacity="0.45"/>
+
+  <!-- Compass arrows -->
+  <!-- N (dark, prominent) -->
+  <polygon points="120,121 124,148 120,153 116,148" fill="#2A2218"/>
+  <!-- S (light) -->
+  <polygon points="120,209 124,182 120,177 116,182" fill="#2A2218" opacity="0.28"/>
+  <!-- E (light) -->
+  <polygon points="164,165 137,169 132,165 137,161" fill="#2A2218" opacity="0.28"/>
+  <!-- W (medium) -->
+  <polygon points="76,165 103,161 108,165 103,169" fill="#2A2218" opacity="0.55"/>
+
+  <!-- Center dot -->
+  <circle cx="120" cy="165" r="5" fill="#2A2218"/>
+  <circle cx="120" cy="165" r="2.5" fill="#F4F0E8"/>
+
+  <!-- N label -->
+  <text x="120" y="112" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-weight="bold" fill="#2A2218">N</text>
+
+  <!-- Subtle terminal hint -->
+  <text x="175" y="252" font-family="'Courier New', monospace" font-size="12" fill="#2A2218" opacity="0.32">›_</text>
+
+  <!-- Corner ornaments -->
+  <circle cx="10" cy="10" r="2" fill="#C8B870" opacity="0.6"/>
+  <circle cx="230" cy="10" r="2" fill="#C8B870" opacity="0.6"/>
+  <circle cx="10" cy="270" r="2" fill="#C8B870" opacity="0.6"/>
+  <circle cx="230" cy="270" r="2" fill="#C8B870" opacity="0.6"/>
+</svg>

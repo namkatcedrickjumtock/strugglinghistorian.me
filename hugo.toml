@@ -14,7 +14,7 @@ buildExpired  = false
 
 [params]
   author = "Namkat Cedrick"
-  description = "A software engineer's obsession with history — event-driven systems, developer tooling, African history, and the patterns that connect them all."
+  description = "Software engineer from Cameroon writing about distributed systems, developer toolchains, and AI-first engineering. History enthusiast. Mostly tech. Quietly curious."
   defaultTheme      = "dark"
   disableThemeToggle = false
   ShowReadingTime   = true
@@ -39,7 +39,7 @@ buildExpired  = false
 
   [params.homeInfoParams]
     Title   = "The Struggling Historian"
-    Content = "I am not a historian.\n\nI'm a software engineer from Cameroon who builds event-driven systems and distributed infrastructure. But somewhere between debugging distributed traces and reading about the fall of empires, I got confused about which one I care about more.\n\n**The Struggling Historian** is where I work that out — in public, one post at a time. Tech, history, and the uncomfortable places where they turn out to be the same thing.\n\n*The struggle is real.*"
+    Content = "**Software engineer from Cameroon.** I build distributed systems and developer toolchains — event-driven architecture, AI-first tooling, and the infrastructure that makes engineering teams faster.\n\nI also have an embarrassing obsession with history. The patterns, the empires, the systems that fell and the ones that didn't.\n\nThis is my writing. Mostly tech. Quietly curious."
 
   [[params.socialIcons]]
     name = "github"
@@ -98,21 +98,6 @@ buildExpired  = false
     name       = "Talks"
     url        = "/talks/"
     weight     = 15
-  [[menu.main]]
-    identifier = "tags"
-    name       = "Tags"
-    url        = "/tags/"
-    weight     = 20
-  [[menu.main]]
-    identifier = "categories"
-    name       = "Categories"
-    url        = "/categories/"
-    weight     = 30
-  [[menu.main]]
-    identifier = "about"
-    name       = "About"
-    url        = "/about/"
-    weight     = 40
   [[menu.main]]
     identifier = "search"
     name       = "Search"

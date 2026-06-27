@@ -1,6 +1,6 @@
 ---
 title: "Posts"
-description: "Writing on tech, history, and the places where they overlap."
+description: "Writing on distributed systems, developer toolchains, and AI-first engineering."
 ---
 
-First post coming soon.
+First post coming soon...

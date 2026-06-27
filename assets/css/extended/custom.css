@@ -1,3 +1,20 @@
+/* ── Typography ────────────────────────────────────────────────── */
+
+body {
+  font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+}
+
+.post-content,
+.entry-content {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 1.05rem;
+  line-height: 1.82;
+}
+
 /* ── Hero two-column layout ────────────────────────────────────── */
 
 .home-info {
@@ -33,85 +50,67 @@
   }
   .home-info-map {
     width: 100%;
-    max-width: 280px;
+    max-width: 240px;
   }
 }
 
-/* ── Homepage sections ─────────────────────────────────────────── */
+/* ── Homepage post list ────────────────────────────────────────── */
 
-.home-section {
-  margin-top: 2.5rem;
+.home-posts {
+  margin-top: 3rem;
   padding-top: 2rem;
   border-top: 1px solid var(--border);
 }
 
-.section-heading {
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--secondary);
-  margin-bottom: 1.25rem;
-  border: none;
+.posts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.section-list {
+.posts-list-item {
   display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--border);
+  gap: 1.5rem;
 }
 
-.entry-link-block {
-  display: block;
-  padding: 1.1rem 1.25rem;
-  background: var(--entry);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  text-decoration: none;
-  transition: border-color 0.15s ease, background 0.15s ease;
+.posts-list-item:last-child {
+  border-bottom: none;
 }
 
-.entry-link-block:hover {
-  border-color: var(--primary);
-  background: var(--code-bg);
-}
-
-.entry-card-title {
-  font-size: 0.975rem;
-  font-weight: 600;
+.posts-list-title {
   color: var(--primary);
-  margin: 0 0 0.35rem 0;
-  line-height: 1.4;
-}
-
-.entry-card-summary {
-  font-size: 0.85rem;
-  color: var(--secondary);
-  margin: 0.35rem 0 0 0;
-  line-height: 1.55;
-}
-
-.entry-card-meta {
-  display: block;
-  font-size: 0.72rem;
-  color: var(--secondary);
-  opacity: 0.7;
-  margin-top: 0.15rem;
-}
-
-.section-more {
-  display: inline-block;
-  margin-top: 0.9rem;
-  font-size: 0.82rem;
-  color: var(--secondary);
   text-decoration: none;
-  opacity: 0.8;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  line-height: 1.4;
   transition: opacity 0.15s ease;
 }
 
-.section-more:hover {
-  opacity: 1;
-  color: var(--primary);
+.posts-list-title:hover {
+  opacity: 0.65;
+}
+
+.posts-list-date {
+  font-size: 0.75rem;
+  color: var(--secondary);
+  white-space: nowrap;
+  opacity: 0.65;
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+}
+
+/* Coming soon placeholder */
+.posts-coming-soon {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+  color: var(--secondary);
+  font-size: 0.9rem;
+  opacity: 0.65;
 }
 
 /* ── Talk single page ──────────────────────────────────────────── */
