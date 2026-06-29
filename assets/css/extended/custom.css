@@ -15,9 +15,10 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.82;
 }
 
-/* Widen the main container so the hero can breathe */
+/* Widen both containers to match — nav and main aligned */
 :root {
   --main-width: 1400px;
+  --nav-width: 1400px;
 }
 
 /* ── Nav icon size ──────────────────────────────────────────────── */
@@ -67,6 +68,30 @@ h1, h2, h3, h4, h5, h6 {
 /* Clear browser default search cancel button styling */
 .nav-search-input::-webkit-search-cancel-button {
   opacity: 0.4;
+}
+
+/* ── Theme toggle at right end of nav ──────────────────────────── */
+
+.nav-toggle-item {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.nav-toggle-item .theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  padding: 0 0.15rem;
+  opacity: 0.75;
+  transition: opacity 0.15s ease;
+}
+
+.nav-toggle-item .theme-toggle:hover {
+  opacity: 1;
 }
 
 /* Keep single-post text readable at its own narrower width */
@@ -132,12 +157,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ── Homepage post list ────────────────────────────────────────── */
 
-.home-posts {
-  margin-top: 3rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--border);
-}
-
 .posts-list {
   list-style: none;
   padding: 0;
@@ -182,11 +201,22 @@ h1, h2, h3, h4, h5, h6 {
 /* Coming soon placeholder */
 .posts-coming-soon {
   margin-top: 3rem;
-  padding-top: 2rem;
+  padding-top: 2.5rem;
   border-top: 1px solid var(--border);
   color: var(--secondary);
   font-size: 0.9rem;
   opacity: 0.65;
+  text-align: center;
+}
+
+/* Post list — center the section too */
+.home-posts {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ── Talk single page ──────────────────────────────────────────── */
