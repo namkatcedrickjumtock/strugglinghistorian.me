@@ -79,19 +79,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-toggle-item .theme-toggle {
-  background: none;
-  border: none;
+  background: transparent;
+  border: 1px solid var(--primary);
+  border-radius: 20px;
   cursor: pointer;
   color: var(--primary);
   display: flex;
   align-items: center;
-  padding: 0 0.15rem;
-  opacity: 0.75;
-  transition: opacity 0.15s ease;
+  padding: 0.28rem 0.7rem;
+  opacity: 1;
+  transition: background 0.15s ease, color 0.15s ease;
+  line-height: 1;
 }
 
 .nav-toggle-item .theme-toggle:hover {
-  opacity: 1;
+  background: var(--primary);
+  color: var(--theme);
+}
+
+.nav-toggle-item .theme-toggle svg {
+  display: block;
 }
 
 /* Keep single-post text readable at its own narrower width */
