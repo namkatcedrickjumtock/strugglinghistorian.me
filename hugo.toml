@@ -98,8 +98,3 @@ buildExpired  = false
     name       = "Talks"
     url        = "/talks/"
     weight     = 15
-  [[menu.main]]
-    identifier = "search"
-    name       = "Search"
-    url        = "/search/"
-    weight     = 50

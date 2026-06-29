@@ -20,6 +20,55 @@ h1, h2, h3, h4, h5, h6 {
   --main-width: 1400px;
 }
 
+/* ── Nav icon size ──────────────────────────────────────────────── */
+
+.logo a svg {
+  height: 36px;
+  width: auto;
+}
+
+/* ── Nav inline search ──────────────────────────────────────────── */
+
+.nav-search-item {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.nav-search-form {
+  display: flex;
+  align-items: center;
+}
+
+.nav-search-input {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  color: var(--primary);
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 0.82rem;
+  padding: 0.28rem 0.85rem;
+  width: 140px;
+  outline: none;
+  transition: border-color 0.15s ease, width 0.2s ease;
+  line-height: 1;
+}
+
+.nav-search-input::placeholder {
+  color: var(--secondary);
+  opacity: 0.55;
+}
+
+.nav-search-input:focus {
+  border-color: var(--primary);
+  width: 200px;
+}
+
+/* Clear browser default search cancel button styling */
+.nav-search-input::-webkit-search-cancel-button {
+  opacity: 0.4;
+}
+
 /* Keep single-post text readable at its own narrower width */
 .post-single .post-content {
   max-width: 700px;
