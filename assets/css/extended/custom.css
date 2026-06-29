@@ -1,20 +1,3 @@
-/* ── Typography ────────────────────────────────────────────────── */
-
-body {
-  font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Space Grotesk', system-ui, sans-serif;
-}
-
-.post-content,
-.entry-content {
-  font-family: 'Lora', Georgia, serif;
-  font-size: 1.05rem;
-  line-height: 1.82;
-}
-
 /* Widen both containers to match — nav and main aligned */
 :root {
   --main-width: 1400px;
@@ -53,7 +36,6 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid var(--border);
   border-radius: 20px;
   color: var(--primary);
-  font-family: 'Space Grotesk', system-ui, sans-serif;
   font-size: 0.82rem;
   padding: 0.28rem 0.85rem;
   width: 140px;
@@ -72,11 +54,9 @@ h1, h2, h3, h4, h5, h6 {
   width: 200px;
 }
 
-/* Clear browser default search cancel button styling */
 .nav-search-input::-webkit-search-cancel-button {
   opacity: 0.4;
 }
-
 
 /* Keep single-post text readable at its own narrower width */
 .post-single .post-content {
@@ -115,10 +95,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .home-info-map {
-  width: clamp(260px, 30vw, 520px);
-  max-width: 520px;
+  width: clamp(300px, 38vw, 640px);
+  max-width: 640px;
   border-radius: 6px;
-  opacity: 0.92;
+  opacity: 0.95;
   display: block;
 }
 
@@ -135,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .home-info-map {
     width: 100%;
-    max-width: 320px;
+    max-width: 380px;
   }
 }
 
@@ -165,7 +145,6 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
-  font-family: 'Space Grotesk', system-ui, sans-serif;
   line-height: 1.4;
   transition: opacity 0.15s ease;
 }
@@ -179,7 +158,6 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--secondary);
   white-space: nowrap;
   opacity: 0.65;
-  font-family: 'Space Grotesk', system-ui, sans-serif;
 }
 
 /* Coming soon placeholder */
@@ -193,7 +171,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-/* Post list — center the section too */
+/* Post list — center the section */
 .home-posts {
   margin-top: 3rem;
   padding-top: 2rem;

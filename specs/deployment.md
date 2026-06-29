@@ -49,6 +49,7 @@ The `--gc` flag removes orphaned cached files — critical because Hugo does not
 | List posts | `make list` | Shows all posts with LIVE / DRAFT status |
 | Publish | `make publish POST=<slug>` | Sets `draft = false`, commits, pushes → deploys |
 | Unpublish | `make unpublish POST=<slug>` | Sets `draft = true`, commits, pushes |
+| Run | `make run` | `hugo server --bind 0.0.0.0 -D` (drafts visible, accessible on LAN) |
 | Dev server | `make serve` | `hugo server -D --navigateToChanged` (drafts visible) |
 | Preview prod | `make preview` | `hugo server` (published only, mirrors production) |
 | Build | `make build` | Clears `public/`, runs `hugo --gc --minify` |
@@ -67,16 +68,8 @@ If Hugo is in `$PATH` (after shell is initialised), `which hugo` resolves it. Ot
 ## Local development
 
 ```bash
+make run            # dev server, all drafts visible, accessible over LAN
 make serve          # dev server with all drafts visible
 make preview        # dev server, published posts only (mirrors prod)
 make build          # full production build into public/
 ```
-
-## GitHub repository setup (one-time)
-
-1. Create repo `strugglinghistorian.me` on GitHub under `namkatcedrickjumtock`
-2. `git remote add origin https://github.com/namkatcedrickjumtock/strugglinghistorian.me.git`
-3. `git push -u origin main`
-4. Repo Settings → Pages → Source: **GitHub Actions**
-5. Set DNS records at your registrar (see Custom domain section above)
-6. GitHub Pages → Custom domain: enter `strugglinghistorian.me` → Save → Enable HTTPS

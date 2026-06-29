@@ -2,39 +2,47 @@
 
 ## Why this blog exists
 
-*The Struggling Historian* is Namkat Cedrick's personal blog — a software engineer from Cameroon writing at the intersection of technology and history. The name is intentional and self-aware: Cedrick is not a historian. He's an engineer hopelessly obsessed with the past.
+*The Struggling Historian* is Namkat Cedrick's personal blog — a software engineer from Cameroon writing primarily about technology. The name is intentional: Cedrick is not a historian. He's an engineer with a deep, somewhat embarrassing obsession with history. The blog is about tech. History shapes the voice, the curiosity, and the way patterns are noticed — but it is not the subject.
 
-The blog is the crossover: event-driven systems and developer tooling sit alongside African history, colonial memory, and the origins of the things we take for granted. The argument is that tech and history are not as separate as people think.
+## What the blog covers
+
+Primarily:
+- Distributed systems and event-driven architecture
+- Developer toolchains and AI-first engineering
+- The infrastructure and thinking behind building software teams
+
+History shows up as a lens and an undercurrent, not as content in its own right.
 
 ## The problem it solves
 
-Most writing is siloed. Engineers write for engineers; historians write for historians. There is a gap for long-form writing that:
-- Takes both code and archive seriously as tools for understanding the world
-- Acknowledges what the record cannot tell us — in history and in systems
-- Uses diagrams, code, and visualisations as legitimate thinking tools, not decoration
-- Speaks to readers who are curious across disciplines
+Most tech writing is transactional — tutorials and release notes. There is a gap for long-form tech writing that:
+- Thinks carefully about systems (technical and human)
+- Takes engineering seriously as a discipline with history and context
+- Uses diagrams, code, and visualisations as legitimate thinking tools
+- Speaks to engineers who read broadly and think past the immediate task
 
 ## Reader personas
 
-**The Developer with a History Itch**
-A software engineer or technical person who reads broadly and suspects history matters more than their education let on. Comfortable with code examples and systems diagrams. Specifically interested in the tech × history crossover.
+**The Senior Engineer / Architect**
+A technical person (5–15 years in) who thinks about systems holistically. Reads broadly. Wants writing that respects their intelligence and doesn't pad out a point that could be made in two paragraphs.
 
-**The Curious Non-Specialist**
-Someone who reads across disciplines — not an academic, not a developer, just someone who wants rigorous, accessible writing on how things got to be the way they are.
+**The Developer-Turned-Tech-Lead**
+Someone navigating the shift from writing code to shaping systems and teams. Interested in how to think, not just what to do.
 
-**The Student / Early Researcher**
-An undergraduate or postgraduate in history, African studies, digital humanities, or computer science looking for methodological examples — how does someone think across both fields?
+**The Curious Generalist**
+Someone adjacent to tech — product, data, or a student — who wants rigorous, accessible writing on how things work and why they were built the way they were.
 
 ## Success metrics
 
 - Posts published consistently (at least one per month once underway)
-- Posts shared in both technical and public-history circles
-- Site findable via search for specific historical and technical topics
+- Posts shared in technical communities and engineering circles
+- Site findable via search for distributed systems and developer tooling topics
 - Speaking and writing opportunities via the Sessionize profile
 
 ## What this blog is NOT
 
-- Not a pure history blog and not a pure tech blog — always the intersection
+- Not a history blog — history is a personal passion, not the content
+- Not a tutorial farm — long-form essays and analysis, not step-by-step how-tos
 - Not a news site or current events commentary blog
-- Not an academic journal (citations used where relevant, not required)
-- Not a product or service — no monetisation planned in the initial phase
+- Not academic — rigorous but accessible, no citation requirements
+- Not monetised — no ads, no paid content in the initial phase
