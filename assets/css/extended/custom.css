@@ -15,17 +15,41 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.82;
 }
 
-/* ── Hero two-column layout ────────────────────────────────────── */
+/* Widen the main container so the hero can breathe */
+:root {
+  --main-width: 1400px;
+}
+
+/* Keep single-post text readable at its own narrower width */
+.post-single .post-content {
+  max-width: 700px;
+}
+
+/* ── Hero full-width side-by-side layout ───────────────────────── */
 
 .home-info {
   display: grid;
   grid-template-columns: 1fr auto;
-  gap: 2.5rem;
-  align-items: start;
+  gap: clamp(2.5rem, 5vw, 6rem);
+  align-items: center;
+  padding: clamp(2.5rem, 5vh, 5rem) 0 clamp(3rem, 6vh, 6rem);
 }
 
 .home-info-content {
   min-width: 0;
+}
+
+.home-info-content h1 {
+  font-size: clamp(1.75rem, 3vw, 2.6rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin-bottom: 1.25rem;
+}
+
+.home-info-content .entry-content {
+  font-size: clamp(1rem, 1.3vw, 1.15rem);
+  line-height: 1.75;
 }
 
 .home-info-map-wrapper {
@@ -33,16 +57,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .home-info-map {
-  width: 220px;
-  border-radius: 4px;
-  opacity: 0.88;
+  width: clamp(260px, 30vw, 520px);
+  max-width: 520px;
+  border-radius: 6px;
+  opacity: 0.92;
   display: block;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .home-info {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
   }
   .home-info-map-wrapper {
     display: flex;
@@ -50,7 +77,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .home-info-map {
     width: 100%;
-    max-width: 240px;
+    max-width: 320px;
   }
 }
 
