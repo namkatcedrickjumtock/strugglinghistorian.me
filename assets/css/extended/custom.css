@@ -24,8 +24,15 @@ h1, h2, h3, h4, h5, h6 {
 /* ── Nav icon size ──────────────────────────────────────────────── */
 
 .logo a svg {
-  height: 36px;
+  height: 40px;
   width: auto;
+}
+
+/* ── Theme toggle at far right of nav ──────────────────────────── */
+
+.nav-toggle-item {
+  display: flex;
+  align-items: center;
 }
 
 /* ── Nav inline search ──────────────────────────────────────────── */
