@@ -1,0 +1,17 @@
+replace this text on my bio screen with precisely this don't change the content except for grammatical improvements " Software engineer from Cameroon. I build distributed systems and developer toolchains — event-driven architecture, AI-first tooling, and the infrastructure that makes engineering teams faster.
+
+I also have an embarrassing obsession with history. The patterns, the empires, the systems that fell and the ones that didn’t.
+
+This is my writing. Mostly tech. Quietly curious."
+
+
+" Wait, Wait, Wait, before you close the tab maybe because the name of the website is a bit confusing, i promise l'll explain why the name later but for now, let's get into my favorite topic, talking about me, kidding , I've spent most of career in early stage startups ecosystems working on mostly on prototypes most times than actual already stable revenue generating products to be rapidly ship to the market, gather users feedback, improve on products and Business requirements and rapidly ship the improvements to users and the cycle continues, until that is hand off to the maintenance team when the product is stable. I primirily work with  Event Driven and Micro Service Architectures. I also find excitment in developing/improving engineers Tools chains, if i can help out in removing or improving a developers workflow or tools chain that's a good day for me.
+
+Now let's go the why the site title "The Struggling historian", am not a Historian and don't claim to be an expert in ancient, mediaviel or even modern History, that being said I have an unhealthy passion for history, Ancient , medivial and modern History and it's always my desire share tiny tits bits of facinating historical facts in my work and writing as an engineer because am a big believer in understanding the past can help me understand the present and hope for the future. so buckle up because you're going to see a little bit of historical bread crumbs here and there as apitizers before diving into any article and of course let me know what you think."
+
+-----------------------------------------------------------------------
+Wait, wait, wait. Before you close the tab, maybe because the name of the website is a bit confusing, I promise I'll explain the name later. But for now, let's get into my favorite topic: talking about me. Kidding.
+
+I've spent most of my career in early-stage startup ecosystems, working mostly on prototypes: building products to be rapidly shipped to market, gathering user feedback, improving on product and business requirements, shipping the improvements back to users, and repeating the cycle until the product is stable enough to hand off to a maintenance team. I primarily work with Event-Driven and Microservice Architectures. I also find excitement in developing and improving developer toolchains. If I can help remove or reduce friction in a developer's workflow, that's a good day for me.
+
+About the site title "The Struggling Historian": I'm not a historian and don't claim to be an expert in ancient, medieval, or modern history. That said, I have an unhealthy passion for it, and it has always been my desire to share tiny tidbits of fascinating historical facts in my work and writing as an engineer. I'm a big believer that understanding the past can help us understand the present and hope for the future. So buckle up, because you're going to see a few historical breadcrumbs here and there as appetizers before diving into any article. Let me know what you think.

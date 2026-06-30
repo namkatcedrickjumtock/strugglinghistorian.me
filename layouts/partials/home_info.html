@@ -5,8 +5,9 @@
       <h1>{{ .Title | markdownify }}</h1>
     </header>
     <div class="entry-content md-content">
-      {{ $opts := dict "display" "block" }}
-      {{ .Content | $.Page.RenderString $opts }}
+      <p>Wait, wait, wait. Before you close the tab, the name will make sense eventually, I promise.</p>
+      <p>I'm a software engineer from Cameroon. Most of my career has been in early-stage startups: build prototypes, ship fast, gather feedback, improve, repeat until stable, then start over somewhere new. I primarily work with Event-Driven and Microservice Architectures, and I get unreasonably excited about developer toolchains. Removing friction from an engineer's workflow is genuinely one of my favourite things.</p>
+      <p>I also have an unhealthy passion for history. Ancient, medieval, modern, all of it. I'm not a historian, I just play one on this blog. Expect a few historical breadcrumbs scattered through the writing. You've been warned.</p>
     </div>
     <footer class="entry-footer">
       {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
